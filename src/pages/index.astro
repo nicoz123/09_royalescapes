@@ -1,4 +1,15 @@
 ---
+const url = "https://seeregjwqrwebkvgypdc.supabase.co";
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNlZXJlZ2p3cXJ3ZWJrdmd5cGRjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE3MTYxNDYsImV4cCI6MTk5NzI5MjE0Nn0.XDxHWVCU6_Dkqi_CKR_urwduoP07Z4OSCb8reQOd0Aw",
+  },
+};
+const response = await fetch(url, options);
+const data = await response.json();
+console.log(data);
+
+import Testamopnials from "../components/Testamopnials.astro";
 ---
 
 <html lang="en">
@@ -11,5 +22,21 @@
 	</head>
 	<body>
 		<h1>Astro</h1>
+
+
+
+
+
+		
+		<h1>Testamonials</h1>
+		<section>
+		  {
+			data.map((act) => {
+			  return <Testamopnials Date={act.Date} Text={act.Text} />;
+			})
+		  }
+		</section
+		>
+		
 	</body>
 </html>
