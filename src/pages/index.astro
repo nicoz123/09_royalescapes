@@ -18,4 +18,45 @@ import Footer from "../components/Footer.astro";
       <Footer />
     </main>
   </body>
+const url = "https://seeregjwqrwebkvgypdc.supabase.co/rest/v1/testemonials?select=id";
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNlZXJlZ2p3cXJ3ZWJrdmd5cGRjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE3MTYxNDYsImV4cCI6MTk5NzI5MjE0Nn0.XDxHWVCU6_Dkqi_CKR_urwduoP07Z4OSCb8reQOd0Aw",
+  },
+};
+const response = await fetch(url, options);
+const data = await response.json();
+console.log(data);
+
+import Testamopnials from "../components/Testamopnials.astro";
+import Header from "../components/Header.astro"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<h1>Astro</h1>
+
+
+
+
+
+		
+		<h1>Testamonials</h1>
+		<section>
+		  {
+			data.map((act) => {
+			  return <Testamopnials Date={act.Date} Text={act.Text} />;
+			})
+		  }
+		</section
+		>
+		
+	</body>
 </html>
