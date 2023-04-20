@@ -1,13 +1,56 @@
 ---
-const { Name, Text } = Astro.props;
+const { id,testemonial } = Astro.props;
 ---
-
-<li>
     <article>
-      <figure class="container">
-        <div class="centered">{Name}</div>
-        <div class="top-right">{Text}</div>
+      <figure class="container1">
+        <div class="centered">{id}</div>
+        <div class="top-right">{testemonial}</div>
       </figure>
     </article>
-  </li>
+  
+
+
+
+  <style>
+ .article{
+  display: grid;
+  grid: "stack";
+  grid-template-rows;: 1fr 1fr 1fr
+
+ }
+ figure {
+    display: grid;
+    grid: "stack";
+    place-items: start;
+    order: -1;
+  }
+  figure > * {
+    grid-area: stack;
+  }
+.container1 {
+  background-color: rgb(248, 245, 245);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.container:hoover{
+}
+
+@media (min-width: 800px){
+
+
+  .container1 {
+      display: flex;
+      grid-template-rows: 1fr 1fr 1fr;
+   
+
+  }
+}
+
+
+  
+</style>
   
