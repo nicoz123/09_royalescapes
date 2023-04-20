@@ -1,7 +1,7 @@
 <header>
   <nav>
     <ul>
-      <h1>det her er en header</h1>
+      <li><a href="/index"><img class="logo" src="img/logo.webp" alt="billede" /></a></li>
       <li>Forside</li>
       <li>Escape rooms</li>
       <li>Book nu</li>
@@ -16,6 +16,15 @@
   header {
     position: sticky;
     justify-content: space-between;
+    display: flex;
+    gap: 6rem;
+  }
+
+  .logo {
+    width: 6.5rem;
+    display: flex;
+    align-content: center;
+    margin-top: 0.01rem;
   }
 
   nav ul a {
@@ -29,9 +38,10 @@
     list-style: none;
     display: flex;
     gap: 4rem;
+    align-items: center;
   }
 
-  header a {
+  header li {
     text-transform: uppercase;
   }
 </style>

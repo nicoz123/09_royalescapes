@@ -8,6 +8,7 @@ const options = {
 const response = await fetch(url, options);
 const data = await response.json();
 console.log(data);
+import "../styles/layout.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Testamopnials from "../components/Testamopnials.astro";
@@ -22,20 +23,18 @@ import Testamopnials from "../components/Testamopnials.astro";
     <title>Astro</title>
   </head>
   <body>
-    <h1>Astro</h1>
     <main>
       <Header />
-      <Footer/>
+      <Footer />
 
-		
-		<h1>Testamonials</h1>
-		<section>
-		  {
-			data.map((act) => {
-			  return <Testamopnials Date={act.Date} Text={act.Text} />;
-			})
-		  }
-		</section>
-	</main>
-	</body>
+      <h1>Testamonials</h1>
+      <section>
+        {
+          data.map((act) => {
+            return <Testamopnials Date={act.Date} Text={act.Text} />;
+          })
+        }
+      </section>
+    </main>
+  </body>
 </html>
