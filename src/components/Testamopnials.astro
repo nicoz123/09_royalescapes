@@ -8,9 +8,6 @@ const { id,testemonial } = Astro.props;
       </figure>
     </article>
   
-
-
-
   <style>
  .article{
   display: grid;
@@ -25,7 +22,7 @@ const { id,testemonial } = Astro.props;
     order: -1;
   }
   figure > * {
-    grid-area: stack;
+    grid-area: "stack";
   }
 .container1 {
   background-color: rgb(248, 245, 245);
@@ -37,6 +34,7 @@ const { id,testemonial } = Astro.props;
   margin-right: 5%;
 }
 .container:hoover{
+
 }
 
 @media (min-width: 800px){
@@ -45,8 +43,7 @@ const { id,testemonial } = Astro.props;
   .container1 {
       display: flex;
       grid-template-rows: 1fr 1fr 1fr;
-   
-
+      
   }
 }
 
