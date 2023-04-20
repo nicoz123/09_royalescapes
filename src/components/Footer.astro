@@ -1,1 +1,143 @@
-<footer><p>Det her er en footer</p></footer>
+<footer>
+  <div class="line-2"></div>
+  <section class="grid2_2">
+    <section class="grid3_3">
+      <a href="https://www.instagram.com/royalescapescph/"><img src="img/instagram.webp" alt="instaikon" /></a>
+      <a href="https://www.facebook.com/royalescapescph"><img src="img/facebook.webp" alt="facebookikon" /></a>
+      <img src="img/tiktok.webp" alt="tiktokikon" />
+    </section>
+
+    <section class="grid1_1">
+      <div>
+        <img src="img/mail.webp" alt="mailikon" />
+      </div>
+      <div>
+        <img src="img/lokation.webp" alt="lokationikon" />
+      </div>
+      <div class="ryk">
+        <a href="">info@royalescapes.dk</a>
+      </div>
+      <div class="ryk">
+        <a href="https://www.google.com/maps/place/Royal+Escapes/@55.6861147,12.5898161,17z/data=!3m1!4b1!4m6!3m5!1s0x465253f02220d4b9:0xe64c6b91367cf407!8m2!3d55.6861147!4d12.5898161!16s%2Fg%2F11mxbdzkfc">Royal Escapes, København K, Fredericiagade 30, 1310 København</a>
+      </div>
+    </section>
+  </section>
+  <p>Copyright Royal Escapes 2021© All Rights Reserved</p>
+
+  <div class="credit">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</footer>
+
+<style>
+  @font-face {
+    font-family: Dosis;
+    src: url(Dosis-VariableFont_wght.ttf);
+  }
+  @media (min-width: 800px) {
+    img {
+      scale: 120%;
+    }
+    .grid3_3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 150px;
+    }
+    .grid1_1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      max-width: 600px;
+      padding-bottom: 100px;
+      text-align: center;
+    }
+    .ryk {
+      margin-top: -14px;
+    }
+    .grid2_2 {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      max-width: 600px;
+      margin: auto;
+      padding-top: 50px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: Dosis;
+    }
+    a:hover {
+      color: rgb(109, 109, 109);
+    }
+    p {
+      text-align: center;
+      color: rgb(69, 69, 69);
+      font-family: dosis;
+    }
+    .credit {
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-size: small;
+      font-family: dosis;
+    }
+    .line-2 {
+      border: 1px solid black;
+      max-width: 900px;
+      margin: auto;
+    }
+    footer {
+      margin-top: 100px;
+    }
+  }
+  @media (max-width: 800px) {
+    .grid2_2 {
+      display: block;
+    }
+    .grid3_3 {
+      display: grid;
+      text-align: center;
+      margin: auto;
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+    .line-2 {
+      border: 1px solid black;
+      max-width: 250px;
+      margin: auto;
+    }
+    img {
+      scale: 120%;
+    }
+    .grid3_3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 150px;
+    }
+    .grid1_1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+    .ryk {
+      margin-top: -23px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: Dosis;
+    }
+    p {
+      text-align: center;
+      color: rgb(69, 69, 69);
+      font-family: dosis;
+      font-size: small;
+    }
+    .credit {
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-size: x-small;
+      font-family: dosis;
+    }
+  }
+</style>
