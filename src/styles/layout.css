@@ -4,6 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 img,
 video {
   width: 100%;
@@ -17,10 +18,39 @@ main {
 
 @font-face {
   font-family: OpenSans;
-  src: url(OpenSans.ttf);
+  src: url(OpenSans.tff);
 }
 
-h1{
+@font-face {
+  font-family: Dosis;
+  src: url(Dosis.tff);
+}
+
+h1 {
+  font-family: Dosis;
+  font-size: 52px;
+  font-weight: normal;
   text-align: center;
-  font-family: OpenSans ;
+  color: #3c3c3c;
+}
+
+h2 {
+  font-family: Dosis;
+  font-size: 24px;
+  text-align: center;
+  font-weight: normal;
+  color: #3c3c3c;
+}
+
+h3 {
+  font-family: Dosis;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: normal;
 }
