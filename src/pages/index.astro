@@ -7,10 +7,14 @@ const options = {
 };
 const response = await fetch(url, options);
 const data = await response.json();
+const randomRows = data.sort(() => Math.random() - 0.5).slice(0, 3);
+
 console.log(data);
+import "../styles/layout.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Testamopnials from "../components/Testamopnials.astro";
+import Hylde from "../components/Hylde.astro";
 ---
 
 <html lang="en">
@@ -22,20 +26,23 @@ import Testamopnials from "../components/Testamopnials.astro";
     <title>Astro</title>
   </head>
   <body>
-    <h1>Astro</h1>
     <main>
       <Header />
-      <Footer/>
+      <video controls muted autoplay="autoplay" loop="">
+        <source src="video/trailer.mp4" type="video/mp4" />
+      </video>
+      <Footer />
 
-		
-		<h1>Testamonials</h1>
-		<section>
-		  {
-			data.map((act) => {
-			  return <Testamopnials Date={act.Date} Text={act.Text} />;
-			})
-		  }
-		</section>
-	</main>
-	</body>
+      <h1>Det siger kunderne om Royal escapes</h1>
+	  <br>
+	  <br>
+      <Hylde>
+        {
+          data.map((act) => {
+            return <Testamopnials id={act.id} testemonial={act.testemonial} />;
+          })
+        }
+      </Hylde>
+    </main>
+  </body>
 </html>

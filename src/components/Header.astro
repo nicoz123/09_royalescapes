@@ -1,10 +1,118 @@
 <header>
+  <div>
+    <a href="/index"><img class="logo" src="img/logo.webp" alt="billede" /></a>
+  </div>
   <nav>
     <ul>
-      <h1>det her er en header</h1>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
+      <li><a href="https://royalescapes.dk/">Forside</a></li>
+      <li class="dropdown">
+        <button class="dropbtn"
+          ><a href="https://royalescapes.dk/dk/escape-rooms/">Escape Rooms</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://royalescapes.dk/dk/escape-rooms/royale-mysterie-escape-room">The Royal Mystery</a>
+          <a href="https://royalescapes.dk/dk/escape-rooms/the-royal-dungeon">The Royal Dungeon</a>
+          <a href="https://royalescapes.dk/dk/escape-rooms/the-royal-playroom">The Royal Playroom</a>
+        </div>
+      </li>
+      <li><a href="https://royalescapes.dk/dk/book-escape-room">Book nu</a></li>
+      <li><a href="https://royalescapes.dk/dk/gavekort">Gavekort</a></li>
+      <li><a href="https://royalescapes.dk/dk/om-royal-escapes">Om os</a></li>
+      <li><a href="https://royalescapes.dk/dk/kontakt-royal-escapes">Kontakt os</a></li>
     </ul>
   </nav>
 </header>
+
+<style>
+  @font-face {
+    font-family: OpenSans;
+    src: url(OpenSans.ttf);
+  }
+  header {
+    position: sticky;
+    justify-content: space-between;
+    display: flex;
+    gap: 6rem;
+    padding: 0.47rem 0.47rem;
+    padding-left: 190px;
+    padding-right: 260px;
+    align-items: center;
+  }
+
+  .logo {
+    width: 6.2rem;
+    display: flex;
+    align-content: center;
+    height: 5.1rem;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    list-style-type: none;
+  }
+  ul {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    align-items: baseline;
+  }
+
+  header li a {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Open Sans;
+    color: #5f5f5f;
+  }
+
+  header a:hover {
+    color: #d2573f;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    color: #5f5f5f;
+    margin: 0;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: Open Sans;
+    text-transform: uppercase;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: #5f5f5f;
+    padding: 10px 50px 10px 20px;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ef9786;
+    color: white;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
