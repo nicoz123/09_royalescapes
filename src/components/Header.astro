@@ -25,10 +25,6 @@
 </header>
 
 <style>
-  @font-face {
-    font-family: OpenSans;
-    src: url(OpenSans.ttf);
-  }
   header {
     position: sticky;
     justify-content: space-between;
@@ -62,10 +58,10 @@
   }
 
   header li a {
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     font-size: 12px;
-    font-family: Open Sans;
-    color: #5f5f5f;
+    color: var(--text-header);
   }
 
   header a:hover {
@@ -78,20 +74,20 @@
   }
 
   .dropdown .dropbtn {
-    color: #5f5f5f;
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-header);
     margin: 0;
     font-size: 12px;
     border: none;
     outline: none;
     background-color: inherit;
-    font-family: Open Sans;
     text-transform: uppercase;
   }
 
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: var(--default-white);
     min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -99,7 +95,7 @@
 
   .dropdown-content a {
     float: none;
-    color: #5f5f5f;
+    color: var(--text-header);
     padding: 10px 50px 10px 20px;
     font-size: 12px;
     text-decoration: none;
@@ -108,8 +104,8 @@
   }
 
   .dropdown-content a:hover {
-    background-color: #ef9786;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--default-white);
   }
 
   .dropdown:hover .dropdown-content {

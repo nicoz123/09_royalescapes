@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #ef9786;
+  --secondary-color: #d2573f;
+  --default-onyx: #3c3c3c;
+  --default-white: #ffffff;
+  --text-header: #5f5f5f;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,41 +24,39 @@ main {
   margin-inline: auto;
 }
 
-@font-face {
-  font-family: OpenSans;
-  src: url(OpenSans.tff);
-}
-
-@font-face {
-  font-family: Dosis;
-  src: url(Dosis.tff);
-}
-
 h1 {
-  font-family: Dosis;
+  font-family: "Dosis", sans-serif;
   font-size: 52px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
-  color: #3c3c3c;
+  color: var(--default-onyx);
 }
 
 h2 {
-  font-family: Dosis;
+  font-family: "Dosis", sans-serif;
   font-size: 24px;
+  font-weight: 400;
   text-align: center;
-  font-weight: normal;
-  color: #3c3c3c;
+  color: var(--default-onyx);
 }
 
 h3 {
-  font-family: Dosis;
+  font-family: "Dosis", sans-serif;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
+  color: var(--default-onyx);
 }
 
 p {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: normal;
+  color: var(--default-onyx);
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: var(--default-onyx);
 }
