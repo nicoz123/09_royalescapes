@@ -9,10 +9,10 @@
 
     <section class="grid1_1">
       <div>
-        <img src="img/mail.webp" alt="mailikon" />
+        <img class="fiks" src="img/mail.webp" alt="mailikon" />
       </div>
       <div>
-        <img src="img/lokation.webp" alt="lokationikon" />
+        <img class="fiks" src="img/lokation.webp" alt="lokationikon" />
       </div>
       <div class="ryk">
         <a href="">info@royalescapes.dk</a>
@@ -34,7 +34,7 @@
   }
   @media (min-width: 800px) {
     img {
-      scale: 120%;
+      scale: 80%;
     }
     .grid3_3 {
       display: grid;
@@ -51,6 +51,12 @@
     }
     .ryk {
       margin-top: -14px;
+    }
+    .fiks {
+      width: 20%;
+      text-align: center;
+      align-items: center;
+      margin: auto;
     }
     .grid2_2 {
       display: grid;
@@ -88,6 +94,12 @@
     }
   }
   @media (max-width: 800px) {
+    .fiks {
+      width: 15%;
+      text-align: center;
+      align-items: center;
+      margin: auto;
+    }
     .grid2_2 {
       display: block;
     }
@@ -102,9 +114,10 @@
       border: 1px solid black;
       max-width: 250px;
       margin: auto;
+      margin-top: 30px;
     }
     img {
-      scale: 120%;
+      scale: 80%;
     }
     .grid3_3 {
       display: grid;
@@ -119,7 +132,7 @@
       text-align: center;
     }
     .ryk {
-      margin-top: -13px;
+      margin-top: -15px;
     }
 
     a {
