@@ -6,7 +6,7 @@
     <ul>
       <li><a href="https://royalescapes.dk/">Forside</a></li>
       <li class="dropdown">
-        <button class="dropbtn"><a href="https://royalescapes.dk/dk/escape-rooms/">Escape Rooms</a></button>
+        <button class="dropbtn"><a href="https://royalescapes.dk/dk/escape-rooms/">Escape Rooms <i class="arrow down"></i></a></button>
         <div class="dropdown-content">
           <a href="https://royalescapes.dk/dk/escape-rooms/royale-mysterie-escape-room">The Royal Mystery</a>
           <a href="https://royalescapes.dk/dk/escape-rooms/the-royal-dungeon">The Royal Dungeon</a>
@@ -109,5 +109,16 @@
 
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  .arrow {
+    border: solid var(--text-header);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 </style>
