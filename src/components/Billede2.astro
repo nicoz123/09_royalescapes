@@ -1,0 +1,60 @@
+<a href="https://royalescapes.dk/dk/escape-rooms/the-royal-dungeon">
+  <section class="grid_1-1">
+    <div id="order">
+      <img src="img/2.webp" alt="" />
+    </div>
+    <div>
+      <h2>The Royal Dungeon</h2>
+      <p>
+        Antal personer: 2-6 <br />
+
+        Pris 2 personer: 300 kr pr person (Undt. lørdage, pris 350 kr) <br />
+        Pris 3-4 personer: 300 kr pr person <br />
+        Pris 5-6 personer: 250 kr pr person
+      </p>
+    </div>
+  </section></a
+>
+<style>
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 4rem;
+  }
+  h2 {
+    font-weight: 800;
+    margin: auto;
+    text-align: left;
+    max-width: 300px;
+  }
+  p {
+    max-width: 300px;
+    text-align: left;
+    margin: auto;
+    align-items: center;
+    margin-top: 30px;
+  }
+  br {
+    margin-bottom: 15px;
+  }
+  #order {
+    order: 2;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 800px) {
+    .grid_1-1 {
+      display: block;
+    }
+    h2 {
+      margin-top: 1rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+</style>
