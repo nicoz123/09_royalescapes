@@ -1,8 +1,8 @@
 <header>
-  <div>
+  <div class="hide">
     <a href="/index"><img class="logo" src="img/logo.webp" alt="billede" /></a>
   </div>
-  <nav>
+  <nav class="hide">
     <ul>
       <li><a href="https://royalescapes.dk/">Forside</a></li>
       <li class="dropdown">
@@ -22,15 +22,20 @@
 </header>
 
 <style>
+  @media screen and (max-width: 1000px) {
+    .hide {
+      display: none;
+    }
+  }
   header {
     position: sticky;
     justify-content: space-between;
     display: flex;
-    gap: 5rem;
-    padding: 0.47rem 0.47rem;
-    padding-left: 190px;
-    padding-right: 260px;
+    gap: 1rem;
+    padding: 8px 257px 8px 190px;
     align-items: center;
+    margin-bottom: -20px;
+    white-space: nowrap;
   }
 
   .logo {
@@ -113,9 +118,10 @@
 
   .arrow {
     border: solid var(--text-header);
-    border-width: 0 1px 1px 0;
+    border-width: 0 1.5px 1.5px 0;
     display: inline-block;
-    padding: 3px;
+    padding: 2px;
+    vertical-align: 3px;
   }
   .down {
     transform: rotate(45deg);
