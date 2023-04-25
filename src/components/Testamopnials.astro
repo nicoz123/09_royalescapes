@@ -5,11 +5,15 @@ const { id, name, description } = Astro.props;
 <article>
   <figure class="container1">
     <div class="top">{name}</div>
-    <p>{description}</p>
+    <p class="navn">{description}</p>
   </figure>
 </article>
 
 <style>
+  @font-face {
+    font-family: Dosis;
+    src: url(Dosis-VariableFont_wght.ttf);
+  }
   .top {
     font-weight: bold;
     top: 8px;
@@ -17,12 +21,16 @@ const { id, name, description } = Astro.props;
     border-radius: 5px;
     font-size: 17px;
     font-weight: bold;
+    font-family: Dosis;
+  }
+  .navn {
+    font-family: Dosis;
   }
   .article {
     display: grid;
     grid: "stack";
     grid-template-rows: 1fr 1fr 1fr;
-    max-width: 200px;
+    max-width: 250px;
   }
   figure {
     display: grid;
