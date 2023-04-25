@@ -19,6 +19,7 @@ import Indhold from "../components/Indhold.astro";
 import Billede1 from "../components/Billede1.astro";
 import Billede2 from "../components/Billede2.astro";
 import Billede3 from "../components/Billede3.astro";
+import BurgerMenu from "../components/BurgerMenu.astro";
 ---
 
 <html lang="en">
@@ -38,6 +39,7 @@ import Billede3 from "../components/Billede3.astro";
   <body>
     <main>
       <Header />
+      <BurgerMenu />
       <video controls muted autoplay="autoplay" loop="">
         <source src="video/trailer.mp4" type="video/mp4" />
       </video>
@@ -45,13 +47,13 @@ import Billede3 from "../components/Billede3.astro";
       <Billede1 />
       <Billede2 />
       <Billede3 />
-      <h1>Det siger kunderne om Royal escape</h1>
+      <h1>Det siger kunderne om Royal Escapes</h1>
       <br />
       <br />
       <Hylde>
         {
           data.map((act) => {
-            return <Testamopnials name={act.name} description={act.description} id={act.id}/>;
+            return <Testamopnials id={act.id}/>;
           })
         }
       </Hylde>
