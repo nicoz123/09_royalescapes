@@ -1,5 +1,5 @@
 ---
-const url = "https://seeregjwqrwebkvgypdc.supabase.co/rest/v1/testemonials?select=id";
+const url = "https://seeregjwqrwebkvgypdc.supabase.co/rest/v1/testemonials?limit=3&offset=1";
 const options = {
   headers: {
     apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNlZXJlZ2p3cXJ3ZWJrdmd5cGRjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE3MTYxNDYsImV4cCI6MTk5NzI5MjE0Nn0.XDxHWVCU6_Dkqi_CKR_urwduoP07Z4OSCb8reQOd0Aw",
@@ -51,7 +51,7 @@ import Billede3 from "../components/Billede3.astro";
       <Hylde>
         {
           data.map((act) => {
-            return <Testamopnials id={act.id}/>;
+            return <Testamopnials name={act.name} description={act.description} id={act.id}/>;
           })
         }
       </Hylde>
