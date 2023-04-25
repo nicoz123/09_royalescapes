@@ -1,33 +1,30 @@
 ---
-const { id,name, description } = Astro.props;
+const { id, name, description } = Astro.props;
 ---
-    <article>
-      <figure class="container1">
-       <div class="top"> {name} </div>
-       <p>{description}</p>
-       
-      </figure>
-    </article>
-  
-  <style>
-.top{
-  font-weight: bold;
+
+<article>
+  <figure class="container1">
+    <div class="top">{name}</div>
+    <p>{description}</p>
+  </figure>
+</article>
+
+<style>
+  .top {
+    font-weight: bold;
     top: 8px;
     padding: 2px 10px 1px 10px;
     border-radius: 5px;
     font-size: 17px;
     font-weight: bold;
-}
- .article{
-  display: grid;
-  grid: "stack";
-  grid-template-rows: 1fr 1fr 1fr;
-  max-width: 250px;
- 
-  
-
- }
- figure {
+  }
+  .article {
+    display: grid;
+    grid: "stack";
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 200px;
+  }
+  figure {
     display: grid;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -35,37 +32,28 @@ const { id,name, description } = Astro.props;
     grid: "stack";
     place-items: start;
     order: -1;
-   
   }
   figure > * {
     grid-area: "stack";
   }
-.container1 {
-  background-color: rgb(248, 245, 245);
- margin-left: auto;
- margin-right: auto;
- padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 300px;
-}
-
-.container:hoover{
-
-}
-
-@media (min-width: 800px){
-
-
   .container1 {
+    background-color: rgb(248, 245, 245);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 300px;
+  }
+
+  .container:hoover {
+  }
+
+  @media (min-width: 800px) {
+    .container1 {
       display: flex;
       grid-template-rows: 1fr 1fr 1fr;
-      
+    }
   }
-}
-
-
-  
 </style>
-  
