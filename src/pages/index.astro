@@ -53,7 +53,7 @@ import BurgerMenu from "../components/BurgerMenu.astro";
       <Hylde>
         {
           data.map((act) => {
-            return <Testamopnials id={act.id}/>;
+            return <Testamopnials id={act.id} description={act.description} name={act.name}/>;
           })
         }
       </Hylde>
