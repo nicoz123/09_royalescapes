@@ -47,13 +47,13 @@ import BurgerMenu from "../components/BurgerMenu.astro";
       <Billede1 />
       <Billede2 />
       <Billede3 />
-      <h1>Det siger kunderne om Royal Escapes</h1>
+      <h3>Det siger kunderne om Royal Escapes</h3>
       <br />
       <br />
       <Hylde>
         {
           data.map((act) => {
-            return <Testamopnials id={act.id} description={act.description} name={act.name}/>;
+            return <Testamopnials id={act.id} description={act.description} name={act.name} />;
           })
         }
       </Hylde>
